@@ -19,9 +19,9 @@ Now the lemma we will use is as follows:
 Another important result to be aware of is:
 
 > Let $R$ be an odd natural number with $m\geq2$ distinct prime factors. If $y$ is chosen uniformly at random from the set of natural numbers coprime to and smaller than $R$, then the probability that the order $r$ of $y$ modulo $R$ is even and satisfies  
-> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$y^{r/2} \not\equiv-1 \text{ mod }R$  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$y^{r/2} \not\equiv-1 \text{ mod }R$  
 > is at least  
-> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$1-\frac{1}{2^m-1}$.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$1-\frac{1}{2^m-1}$.
 
 With these in mind, we can see that if $R$ is odd then a random number chosen from those coprime and less than it will, with high probability, have easily constructible factors of $R$ produced by it.
 
@@ -29,13 +29,13 @@ With all of this in mind we move to the algorithm.
 
 > ### Shor's Algorithm (factoring the natural number $R$)
 > 1. Check that $R$ is not prime.  
-> *If so, stop and return $R$.*
+> *If so, stop and return* $R$.
 > 2. Check if $R$ is even.  
-> *If so, stop and return $2$.*
+> *If so, stop and return* $2$.
 > 3. Check if $R=a^b$ for some integers $a\geq1$ and $b\geq2$.  
-> *If so, stop and return $a$.*
+> *If so, stop and return* $a$.
 > 4. Uniformly at random pick an integer $1<y<R$ and evaluate $\text{hcf}(y,R)$.  
-> *If $\text{hcf}(y,R)>1$, we can stop and return this factor.*
+> *If* $\text{hcf}(y,R)>1$, *we can stop and return this factor.*
 > 5. Compute the order $r$ of $y$ modulo $R$ via [hidden-order determination](hod.py).
 > 6. Check if $r$ is odd.  
 > *If so, return to step 4.*
