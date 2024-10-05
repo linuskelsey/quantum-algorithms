@@ -1,4 +1,4 @@
-# Function to determine if a number is of the form a^b, a≥1, b≥2. O(log(a)).
+# Function to determine if a number is of the form a^b, a≥1, b≥2.
 def powerCheck(a):
     b=2
     # while condition makes an efficiency as numbers tested at
