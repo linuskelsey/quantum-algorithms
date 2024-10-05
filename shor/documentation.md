@@ -19,9 +19,9 @@ Now the lemma we will use is as follows:
 Another important result to be aware of is:
 
 > Let $R$ be an odd natural number with $m\geq2$ distinct prime factors. If $y$ is chosen uniformly at random from the set of natural numbers coprime to and smaller than $R$, then the probability that the order $r$ of $y$ modulo $R$ is even and satisfies  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$y^{r/2} \not\equiv-1 \text{ mod }R$  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $y^{r/2} \not\equiv-1 \text{ mod }R$  
 > is at least  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$1-\frac{1}{2^m-1}$.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $1-\frac{1}{2^m-1}$.
 
 With these in mind, we can see that if $R$ is odd then a random number chosen from those coprime and less than it will, with high probability, have easily constructible factors of $R$ produced by it.
 
